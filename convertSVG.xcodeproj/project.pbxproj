@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		138722A11AAA73B400D79B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 138722A01AAA73B400D79B1C /* main.m */; };
+		138722A91AAA73D700D79B1C /* WebViewConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 138722A81AAA73D700D79B1C /* WebViewConverter.m */; };
+		138722AB1AAA755100D79B1C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138722AA1AAA755100D79B1C /* AppKit.framework */; };
+		138722AD1AAA755800D79B1C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138722AC1AAA755800D79B1C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		1387229D1AAA73B400D79B1C /* convertSVG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = convertSVG; sourceTree = BUILT_PRODUCTS_DIR; };
 		138722A01AAA73B400D79B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		138722A71AAA73D700D79B1C /* WebViewConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewConverter.h; sourceTree = "<group>"; };
+		138722A81AAA73D700D79B1C /* WebViewConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewConverter.m; sourceTree = "<group>"; };
+		138722AA1AAA755100D79B1C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		138722AC1AAA755800D79B1C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138722AD1AAA755800D79B1C /* WebKit.framework in Frameworks */,
+				138722AB1AAA755100D79B1C /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +50,8 @@
 		138722941AAA73B400D79B1C = {
 			isa = PBXGroup;
 			children = (
+				138722AC1AAA755800D79B1C /* WebKit.framework */,
+				138722AA1AAA755100D79B1C /* AppKit.framework */,
 				1387229F1AAA73B400D79B1C /* convertSVG */,
 				1387229E1AAA73B400D79B1C /* Products */,
 			);
@@ -58,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				138722A01AAA73B400D79B1C /* main.m */,
+				138722A71AAA73D700D79B1C /* WebViewConverter.h */,
+				138722A81AAA73D700D79B1C /* WebViewConverter.m */,
 			);
 			path = convertSVG;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138722A91AAA73D700D79B1C /* WebViewConverter.m in Sources */,
 				138722A11AAA73B400D79B1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

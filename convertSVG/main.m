@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WebViewConverter.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSApplication *app = [NSApplication sharedApplication];
+        
+        WebViewConverter *converter = [WebViewConverter new];
+        [converter run];
+        [[NSRunLoop currentRunLoop] run];
     }
     return 0;
 }
