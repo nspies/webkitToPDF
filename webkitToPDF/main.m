@@ -1,6 +1,6 @@
 //
 //  main.m
-//  convertSVG
+//  webkitToPDF
 //
 //  Created by Noah Spies on 3/6/15.
 //  Copyright (c) 2015 Noah Spies. All rights reserved.
