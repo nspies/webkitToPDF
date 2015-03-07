@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		138722A11AAA73B400D79B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 138722A01AAA73B400D79B1C /* main.m */; };
-		138722A91AAA73D700D79B1C /* WebViewConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 138722A81AAA73D700D79B1C /* WebViewConverter.m */; };
 		138722AB1AAA755100D79B1C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138722AA1AAA755100D79B1C /* AppKit.framework */; };
 		138722AD1AAA755800D79B1C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138722AC1AAA755800D79B1C /* WebKit.framework */; };
+		138722B11AAA852500D79B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 138722AE1AAA852500D79B1C /* main.m */; };
+		138722B21AAA852500D79B1C /* WebViewConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 138722B01AAA852500D79B1C /* WebViewConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,12 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1387229D1AAA73B400D79B1C /* convertSVG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = convertSVG; sourceTree = BUILT_PRODUCTS_DIR; };
-		138722A01AAA73B400D79B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		138722A71AAA73D700D79B1C /* WebViewConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewConverter.h; sourceTree = "<group>"; };
-		138722A81AAA73D700D79B1C /* WebViewConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewConverter.m; sourceTree = "<group>"; };
+		1387229D1AAA73B400D79B1C /* webkitToPDF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = webkitToPDF; sourceTree = BUILT_PRODUCTS_DIR; };
 		138722AA1AAA755100D79B1C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		138722AC1AAA755800D79B1C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		138722AE1AAA852500D79B1C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = webkitToPDF/main.m; sourceTree = SOURCE_ROOT; };
+		138722AF1AAA852500D79B1C /* WebViewConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewConverter.h; path = webkitToPDF/WebViewConverter.h; sourceTree = SOURCE_ROOT; };
+		138722B01AAA852500D79B1C /* WebViewConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewConverter.m; path = webkitToPDF/WebViewConverter.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			children = (
 				138722AC1AAA755800D79B1C /* WebKit.framework */,
 				138722AA1AAA755100D79B1C /* AppKit.framework */,
-				1387229F1AAA73B400D79B1C /* convertSVG */,
+				1387229F1AAA73B400D79B1C /* webkitToPDF */,
 				1387229E1AAA73B400D79B1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,27 +60,28 @@
 		1387229E1AAA73B400D79B1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1387229D1AAA73B400D79B1C /* convertSVG */,
+				1387229D1AAA73B400D79B1C /* webkitToPDF */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1387229F1AAA73B400D79B1C /* convertSVG */ = {
+		1387229F1AAA73B400D79B1C /* webkitToPDF */ = {
 			isa = PBXGroup;
 			children = (
-				138722A01AAA73B400D79B1C /* main.m */,
-				138722A71AAA73D700D79B1C /* WebViewConverter.h */,
-				138722A81AAA73D700D79B1C /* WebViewConverter.m */,
+				138722AE1AAA852500D79B1C /* main.m */,
+				138722AF1AAA852500D79B1C /* WebViewConverter.h */,
+				138722B01AAA852500D79B1C /* WebViewConverter.m */,
 			);
+			name = webkitToPDF;
 			path = convertSVG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1387229C1AAA73B400D79B1C /* convertSVG */ = {
+		1387229C1AAA73B400D79B1C /* webkitToPDF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 138722A41AAA73B400D79B1C /* Build configuration list for PBXNativeTarget "convertSVG" */;
+			buildConfigurationList = 138722A41AAA73B400D79B1C /* Build configuration list for PBXNativeTarget "webkitToPDF" */;
 			buildPhases = (
 				138722991AAA73B400D79B1C /* Sources */,
 				1387229A1AAA73B400D79B1C /* Frameworks */,
@@ -90,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = convertSVG;
+			name = webkitToPDF;
 			productName = convertSVG;
-			productReference = 1387229D1AAA73B400D79B1C /* convertSVG */;
+			productReference = 1387229D1AAA73B400D79B1C /* webkitToPDF */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 138722981AAA73B400D79B1C /* Build configuration list for PBXProject "convertSVG" */;
+			buildConfigurationList = 138722981AAA73B400D79B1C /* Build configuration list for PBXProject "webkitToPDF" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1387229C1AAA73B400D79B1C /* convertSVG */,
+				1387229C1AAA73B400D79B1C /* webkitToPDF */,
 			);
 		};
 /* End PBXProject section */
@@ -131,8 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138722A91AAA73D700D79B1C /* WebViewConverter.m in Sources */,
-				138722A11AAA73B400D79B1C /* main.m in Sources */,
+				138722B21AAA852500D79B1C /* WebViewConverter.m in Sources */,
+				138722B11AAA852500D79B1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,21 +217,21 @@
 		138722A51AAA73B400D79B1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = webkitToPDF;
 			};
 			name = Debug;
 		};
 		138722A61AAA73B400D79B1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = webkitToPDF;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		138722981AAA73B400D79B1C /* Build configuration list for PBXProject "convertSVG" */ = {
+		138722981AAA73B400D79B1C /* Build configuration list for PBXProject "webkitToPDF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				138722A21AAA73B400D79B1C /* Debug */,
@@ -239,13 +240,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		138722A41AAA73B400D79B1C /* Build configuration list for PBXNativeTarget "convertSVG" */ = {
+		138722A41AAA73B400D79B1C /* Build configuration list for PBXNativeTarget "webkitToPDF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				138722A51AAA73B400D79B1C /* Debug */,
 				138722A61AAA73B400D79B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
