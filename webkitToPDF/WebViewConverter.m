@@ -24,6 +24,12 @@
         
         NSArray *arguments = [[NSProcessInfo processInfo] arguments];
         
+        if ([arguments count] != 3) {
+            NSLog(@"Arguments are <input URL/path> <output path.pdf>");
+            [self quit];
+            return nil;
+        }
+        
         inputURL = [NSURL URLWithString:[arguments objectAtIndex:1]];
         outputURL = [NSURL fileURLWithPath:[arguments objectAtIndex:2]];
     }
