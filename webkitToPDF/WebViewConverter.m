@@ -29,9 +29,16 @@
             [self quit];
             return nil;
         }
+
+        NSURL *directoryURL = [NSURL fileURLWithPath:[[NSFileManager defaultManager] currentDirectoryPath]];
         
-        inputURL = [NSURL URLWithString:[arguments objectAtIndex:1]];
+        inputURL = [NSURL URLWithString:[arguments objectAtIndex:1]
+                          relativeToURL:directoryURL];
         outputURL = [NSURL fileURLWithPath:[arguments objectAtIndex:2]];
+        
+        NSLog(@"Input:  %@", [inputURL path]);
+        NSLog(@"Output: %@", [outputURL path]);
+
     }
     return self;
 }
