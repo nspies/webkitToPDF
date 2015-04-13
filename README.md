@@ -8,7 +8,6 @@ Command-line arguments are (1) input URL (web page or file path) and (2) output 
 
 ## Installation
 
-To install, download the latest binary file from the [releases](https://github.com/nspies/webkitToPDF/releases/latest) page, and move the application into your PATH. For example, after downloading and unzipping the archive, use the following command to install the program:
+To install, download the latest binary file from the [releases](https://github.com/nspies/webkitToPDF/releases/latest) page, and move the application into your PATH. For example, after downloading and unzipping the application, use the following command to install the program:
 
-```cd webkitToPDF
-sudo mv webkitToPDF /usr/bin```
+`sudo mv webkitToPDF /usr/bin`
