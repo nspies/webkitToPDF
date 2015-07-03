@@ -13,7 +13,6 @@
 
 @interface WebViewConverter : NSObject {
     WebView *wview;
-    NSWindow *window;
     NSURL *inputURL;
     NSURL *outputURL;
 }

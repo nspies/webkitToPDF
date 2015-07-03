@@ -15,12 +15,7 @@
     if ( self = [super init] )
     {
         wview = [[WebView alloc] initWithFrame:NSMakeRect(0, 0, 1, 1) frameName:@"myFrame" groupName:@"myGroup"];
-        window = [[NSWindow alloc] initWithContentRect:NSMakeRect(0,0,1,1)
-                                                       styleMask:NSBorderlessWindowMask
-                                                         backing:NSBackingStoreRetained
-                                                           defer:false];
         [wview setFrameLoadDelegate:self];
-        [window setContentView:wview];
         
         NSArray *arguments = [[NSProcessInfo processInfo] arguments];
         
